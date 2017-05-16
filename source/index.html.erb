@@ -13,18 +13,18 @@ title: Le Wagon 2-hour landing workshop
         <h2 class="readme-header">1. Let's set up</h2>
         <ol>
           <li>Start Sublime Text. It will open a new black window.</li>
-          <li>Create a <strong>folder</strong> <code>landing</code> on your Desktop. Drag & drop this folder in the Sublime Text window.</li>
+          <li>Create a <strong>folder</strong> <code>landingpage</code> on your Desktop. Drag & drop this folder in the Sublime Text window.</li>
           <li>
             In Sublime Text left navigation:
             <ul>
               <li>Right click <strong>"New file"</strong></li>
-              <li>Save it as <code>playground.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
+              <li>Save it as <code>index.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
               <li>Do the same to create a <code>style.css</code> file</li>
               <li>Then <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
             </ul>
             </ul>
           </li>
-          <li>Finally double click on <code>playground.html</code> to open it with Chrome</li>
+          <li>Finally double click on <code>index.html</code> to open it with Chrome</li>
         </ol>
 
         <img src='images/setup.png' width="100%"/>
@@ -36,52 +36,47 @@ title: Le Wagon 2-hour landing workshop
           <li>
             To save time, just right-click on the following images and save them in your <code>images</code> folder
             <ul class="list-inline">
-              <li><img src="images/briefcase.png" alt="" width="100"></li>
-              <li><img src="images/diamond.png" alt="" width="100"></li>
-              <li><img src="images/heart.png" alt="" width="100"></li>
-              <li><img src="images/laptop.png" alt="" width="100"></li>
+              <li><img src="images/focus.jpg" alt="" width="100"></li>
+              <li><img src="images/attitude.jpg" alt="" width="100"></li>
+              <li><img src="images/excellence.jpg" alt="" width="100"></li>
+              <li><img src="images/innovative.jpg" alt="" width="100"></li>
             </ul>
           </li>
-          <li>Then start with this HTML code in <code>playground.html</code></li>
+          <li>Then start with this HTML code in <code>index.html</code></li>
         </ul>
 <% code("html") do %>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My playground landing</title>
+    <title>Values at Satair</title>
   </head>
   <body>
-    <h1>My playground app</h1>
+    <h1>Our values</h1>
     <p>This is the important line everyone reads..</p>
     <p>
       <a href="#">Start now</a>
     </p>
 
-    <img src="images/briefcase.png" alt="picture description" width="100">
+    <img src="images/focus.jpg" alt="picture description" width="100">
     <h2>Fast</h2>
     <p>A fast app, <strong>very fast</strong> app</p>
 
-    <img src="images/diamond.png" alt="picture description" width="100">
+    <img src="images/attitude.jpg" alt="picture description" width="100">
     <h2>Simple</h2>
     <p>A simple app, <strong>very simple</strong> app</p>
 
-    <img src="images/heart.png" alt="picture description" width="100">
+    <img src="images/excellence.jpg" alt="picture description" width="100">
     <h2>Awesome</h2>
     <p>An awesome app, <strong>very awesome</strong> app</p>
 
-    <img src="images/laptop.png" alt="picture description" width="100">
+    <img src="images/innovative.jpg" alt="picture description" width="100">
     <h2>Beautiful</h2>
     <p>A beautiful app, <strong>very beautiful</strong> app</p>
 
-    <p>This is a playground landing ©Le Wagon</p>
+    <p>These are our values @ Satair</p>
   </body>
 </html>
 <% end %>
-        <h3>Extra - find nice personal icons</h3>
-        <ul>
-          <li>You can pick your icons on <a href="https://iconstore.co/" target="_blank">IconStore</a>, <a href="https://thenounproject.com/" target="_blank">The Noun Project</a> or <a href="https://nucleoapp.com/premium-icons/" target="_blank">NucleoApp</a> (they have a free pack).</li>
-          <li><strong>Tips</strong>: Also stay tuned checking <a href="https://www.producthunt.com/search?q=icons" target="_blank">icon resources on Product Hunt</a></li>
-        </ul>
       </section>
 
       <section class="readme-section">
@@ -94,37 +89,32 @@ title: Le Wagon 2-hour landing workshop
   <link href='style.css' rel='stylesheet'>
 </head>
 <% end %>
-        <p>Then copy/paste the CSS code below in <code>style.css</code> and <strong>fix it</strong> cause it's ugly</p>
+        <p>Then add some CSS code  in <code>style.css</code>. For some inspiration see below :-)
         <ul>
-          <li>For fonts use <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
-          <li>For colors use <a href="http://www.colorzilla.com/chrome/" target="_blank">Colorzilla Chrome plugin</a> to pick colors from other websites</li>
-          <li>You can also find nice colors on <a href="https://coolors.co/" target="_blank">Coolors</a> or <a href="http://colorhunt.co/" target="_blank">Color Hunt</a></li>
+          <li>You can find nice colors on <a href="https://coolors.co/" target="_blank">Coolors</a> or <a href="http://colorhunt.co/" target="_blank">Color Hunt</a></li>
+          <li>The official Satair color is <code>#B11116</code></li>
         </ul>
 <% code("css") do %>
 /* style.css */
 body{
-  background: rgb(245,245,245);
-  color: green;
-  font-size: 25px;
+  font-size: 15px;
   font-family: Helvetica;
 }
 h1{
   font-family: Courier;
   color: red;
-  font-weight: lighter;
-  font-size: 10px;
+  font-size: 20px;
 }
 h2 {
   font-family: Courier;
   color: pink;
-  font-weight: lighter;
-  font-size: 8px;
+  font-size: 18px;
 }
 a {
-  color: yellow;
+  color: green;
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
   color: purple;
 }
 <% end %>
@@ -135,36 +125,36 @@ a:hover {
 
 <% code("html") do %>
 <div>
-  <h1>My playground app</h1>
+  <h1>Our values</h1>
   <p>This is the important line everyone reads..</p>
 </div>
 
 <div>
-  <img src="images/briefcase.png" alt="picture description" width="100">
+  <img src="images/focus.jpg" alt="picture description" width="100">
   <h2>Fast</h2>
   <p>A fast app, <strong>very fast</strong> app</p>
 </div>
 
 <div>
-  <img src="images/diamond.png" alt="picture description" width="100">
+  <img src="images/attitude.jpg" alt="picture description" width="100">
   <h2>Simple</h2>
   <p>A simple app, <strong>very simple</strong> app</p>
 </div>
 
 <div>
-  <img src="images/heart.png" alt="picture description" width="100">
+  <img src="images/excellence.jpg" alt="picture description" width="100">
   <h2>Awesome</h2>
   <p>An awesome app, <strong>very awesome</strong> app</p>
 </div>
 
 <div>
-  <img src="images/laptop.png" alt="picture description" width="100">
+  <img src="images/innovative.jpg" alt="picture description" width="100">
   <h2>Beautiful</h2>
   <p>A beautiful app, <strong>very beautiful</strong> app</p>
 </div>
 
 <div>
-  <p>This is a playground landing ©Le Wagon</p>
+  <p>These are our values @ Satair</p>
 </div>
 <% end %>
 
@@ -172,43 +162,42 @@ a:hover {
       <section class="readme-section">
         <h2 class="readme-header">5. Name your tags</h2>
         <ul>
-          <li>Name your banner and footer with <code>id</code> like <code>&lt;div id="banner"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
-          <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code></li>
+          <li>Name your header and footer with <code>id</code> like <code>&lt;div id="header"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
+          <li>Name your values with <code>class</code> like <code>&lt;div class="value"&gt;</code></li>
           <li>Then add this nice CSS code</li>
         </ul>
 <% code("css") do %>
-#banner{
+#header{
   text-align: center;
-  background-image: url("https://unsplash.it/1300/600?random");
+  background-image: url('http://resources.mynewsdesk.com/image/upload/c_limit,dpr_2.0,f_auto,h_700,q_auto,w_670/c0nw0keg8aajgdojgn5u.jpg');
   background-size: cover;
   padding: 150px;
   color: white;
   text-shadow: 1px 1px 5px black;
 }
-#banner h1 {
+#header h1 {
   color: white;
   font-size: 50px;
 }
-#banner p {
+#header p {
   color: white;
   opacity: 0.8;
   font-size: 30px;
-  font-weight: lighter;
 }
 #footer{
   padding: 30px;
   background: rgb(30, 30, 30);
-  color: lightgrey;
+  color: rgb(240,240,240);
 }
-.card{
+.value{
   padding: 50px;
-  font-weight: lighter;
+  text-align: center;
 }
 <% end %>
 
 <h3>Extra - find a cool background image</h3>
 <ul>
-  <li>You can pick your background picture on <a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
+  <li>You can pick a different background picture at <a href="http://mediaroom.satair.com/latest_media" target="_blank">Satair Media</a></li>
 </ul>
       </section>
       <section class="readme-section">
@@ -232,10 +221,10 @@ a:hover {
 <% code("css") do %>
 #footer a {
   color: lightgrey;
-  font-size: 15px;
+  font-size: 25px;
 }
 #footer a:hover {
-  color: white;
+  color: #B11116;
 }
 <% end %>
       </section>
@@ -246,10 +235,9 @@ a:hover {
 <% code("html") do %>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link href='style.css' rel='stylesheet'>
 </head>
 <% end %>
-          <p>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</p>
+          <p>Play with <code>class="btn btn-success"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</p>
 
       </section>
       <section class="readme-section">
